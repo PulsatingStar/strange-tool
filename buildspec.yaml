@@ -6,13 +6,11 @@ phases:
       nodejs: 12.x
   pre_build:
     commands:
-      - echo Installing source npm dependencies
-      - npm install
+      - Nothing to install in pre-build
   build:
     commands:
       - echo Build started on `date`
-      - echo installing dependencies
-      - npm run start
+      - npm install
   post_build:
     commands:
       - echo Build completed on `date`
